@@ -10,6 +10,15 @@ body{
 	cursor: url(images/redglass.crs);
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
 .music{
 	display: none
 }
@@ -108,7 +117,6 @@ padding: 0 0 100 0;
 }
 
 .content{
-	background: blue;
 	width: 100%;
 	height: 1080px;
  	scroll-snap-type: y mandatory;
@@ -117,11 +125,10 @@ padding: 0 0 100 0;
 }
 
 .section{
-	background: white;
+	background: black;
 	height: 100vh;
   	width: 100%;
 	scroll-snap-align: start;
-	scroll-behavior: smooth;
 	position: relative;
 }
 
@@ -134,6 +141,35 @@ padding: 0 0 100 0;
 	width: auto;
 	float: right;
 	position: relative;
+	
+}
+
+.headline{
+	font-family: Molot;
+	src: url(Molot.otf);
+	font-size: 200px;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	color: white;
+}
+
+.storybox{
+	width: 930px;
+	height: 600px;
+	position: absolute;
+	z-index: 50;
+	top: 32%;
+	left: 5%;
+	color: white;
+	font-size: 30px;
+	text-align: justify;
+	transition: all 2s;
+	opacity: 0;
+}
+
+.storybox:hover {
+	opacity: 1
 }
 
 .ten{
@@ -214,6 +250,97 @@ padding: 0 0 100 0;
 	transform: scale(1.1)
 }
 
+.theseven{
+	font-family: Subspace;
+	src: url(font/Subspace.otf);
+	font-size: 60px;
+	color: white;
+}
+
+.theseven .starlight{
+	position: absolute;
+	left: 15%;
+	bottom: 40%;
+	transition: all 1s; 
+}
+
+.theseven .thedeep{
+	position: absolute;
+	left: 25%;
+	bottom: 50%;
+	transition: all 1s; 
+}
+
+.theseven .queenmaeve{
+	position: absolute;
+	left: 32%;
+	bottom: 35%;
+	transition: all 1s; 
+}
+
+.theseven .homelander{
+	position: absolute;
+	left: 43%;
+	bottom: 60%;
+	transition: all 1s; 
+}
+
+.theseven .blacknoir{
+	position: absolute;
+	left: 55%;
+	bottom: 35%;
+	transition: all 1s; 
+}
+
+.theseven .atrain{
+	position: absolute;
+	left: 68%;
+	bottom: 50%;
+	transition: all 1s; 
+}
+
+.theseven .translucent{
+	position: absolute;
+	left: 75%;
+	bottom: 40%;
+	transition: all 1s; 
+}
+
+.theseven .starlight:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .thedeep:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .queenmaeve:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .homelander:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .blacknoir:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .atrain:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
+.theseven .translucent:hover{
+	color: #800002;
+	transform: scale(1.1)
+}
+
 .effect{
 	width: 300px;
 }
@@ -274,5 +401,76 @@ padding: 0 0 100 0;
 	transform: scale(1.1)
 }
 
+.videobox{
+	width: 640px;
+	height: 460px;
+	display: inline-block;
+}
 
+.box1{
+	bottom: 5%;
+	left: 3%;
+	position: absolute;
+	transition: all 1s;
+}
 
+.box1:hover{
+	transform: translateY(-400px) translateX(200px)scale(1.5)
+	
+}
+
+.box2{
+	bottom: 5%;
+	left: 35%;
+	position: absolute;
+	transition: all 1s;
+}
+
+.box2:hover{
+	transform: translateY(-400px) translateX(-200px)scale(1.5)
+	
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgba(0,0,0,0.50);
+  color: white;
+  text-align: center;
+font-family: Subspace;
+src: url(font/Subspace.otf);
+font-size: 20px;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 72%;
+right: 0px;
+}
+
+.icon-bar a{
+  display: block;
+  text-align: center;
+  padding: 0px;
+  transition: all 0.3s;
+  color: white;
+  font-size: 30px;
+}
+
+.icon-bar a:hover {
+  transform: scale(1.2)
+}
+
+.facebook {
+  color: white;
+}
+
+.twitter {
+  color: white;
+}
+
+.youtube{
+  color: white;
+}
