@@ -6,6 +6,10 @@
 	margin: 0;
 }
 
+body{
+	cursor: url(images/redglass.crs);
+}
+
 .music{
 	display: none
 }
@@ -82,12 +86,12 @@
 #menu ul li a{
 	text-decoration: none;
 	color: white;
-
+	
 }
 
 #menu ul li:hover{
 	transform: scale(1.3);
-	
+	cursor: url(images/redglass_link.ani), pointer;
 }
 
 #menu img{
