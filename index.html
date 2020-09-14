@@ -1,278 +1,159 @@
-@charset "utf-8";
-/* CSS Document */
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="dist/jquery.scroll-spy.js" type="text/javascript">
+<link rel="stylesheet" href="dist/jquery.scroll-spy.min.js" type="text/javascript">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-*{
-	padding: 0;
-	margin: 0;
-}
+<body>
+		<div class="wrapper">
+			<header class="header-main">
+			<div class="container">
+			<div class="logo">
+				<img src="images/951ab3d7f0375308941ee91f642ac0b4640899e7318ccc80e0e469d8bc4b90f9._RI_V_TTW_313.png" alt="">
+			</div>
+			<div id="mySidebar" class="sidebar">
+ 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  				<a href="#home">Home</a>
+  				<a href="#story">Story</a>
+  				<a href="#theboys">The Boys</a>
+  				<a href="#theseven">The Seven</a>
+				<a href="#video">Videos</a>
+				<a href="#" class="fa fa-facebook"></a>
+				<div class="icon-bar">
+					<a href="https://www.facebook.com/TheBoysTV/" target="_blank" class="facebook"><em class="fa fa-facebook"></em></a> 
+					<a href="https://twitter.com/theboystv" target="_blank" class="twitter"><em class="fa fa-twitter"></em></a> 
+					<a href="https://www.youtube.com/user/amazonstudios" target="_blank" class="youtube"><em class="fa fa-youtube"></em></a></div>
+			</div>
 
-body{
-	cursor: url(images/redglass.crs);
-}
-
-.music{
-	display: none
-}
-
-.wrapper{
-	width: 1920px;
-	height: 100vh;
-	margin: 0 auto;
-}
-
-.header-main{
-	width: 100%;
-	height: 100px;
-	position: absolute;
-	z-index: 99999;
-}
-
-
-.logo{
-	width: 20%;
-	height: 100px;
-	float: left;
-	position: absolute;
-
-}
-
-.logo img{
-	width: 50%;
-	position: absolute;
-	top: 15%;
-	left: 10%;
-	transition: all 3s;
-}
-
-.logo img:hover{
-	transform: scale(1.2)
-}
-
-.sidebar {
- 	 height: 100%;
- 	 width: 300px;
-	  position: fixed;
-	  z-index: 1;
- 	 top: 0;
- 	 right: 0;
- 	 background-color: rgba(30,27,27,0.70);
+			<div id="main">
+  				<button class="openbtn" onclick="openNav()">☰</button>  
+			</div>
+			</div>
+			</header>
+			<div class="content">
+			<div id="home" class="section top" style="background: rgba(255,255,255,1.00)">
+				<img src="images/'lljjj.png" alt="">
+			</div>
+			<div id="story" class="section">
+				<img style="opacity: 0.5" src="images/2020-the-boys-season-2-td-1920x1080.jpg" alt="">
+				<div class="headline">Storyline</div>
+				<div class="storybox">
+					
+					<p>The Boys is set in a universe in which superpowered people are recognized as heroes by the general public and owned by a powerful corporation, Vought International, which ensures that they are aggressively marketed and monetized. Outside of their heroic personas, most are arrogant and corrupt. The series primarily focuses on two groups: the titular Boys, vigilantes looking to keep the corrupted heroes under control, and the Seven, Vought International's premier superhero team. The Boys are led by Billy Butcher, who despises all superpowered people, and the Seven are led by the egotistical and unstable Homelander. As a conflict ensues between the two groups, the series also follows the new members of each team: Hugh "Hughie" Campbell of the Boys, who joins the vigilantes after his girlfriend is killed in a high-speed collision by the Seven's A-Train, and Annie January/Starlight of the Seven, a young and hopeful heroine forced to face the truth about the heroes she admires.</p>
+				</div>	
+			</div>
+			<div id="theboys" class="section">
+				<img style="opacity: 0.8" src="images/the-boys-season-2-4k-0y-1920x1080.jpg" alt="">
+				<div class="ten">
+					<div class="billybutcher">
+						<p>Billy Butcher</p>
+<!--
+						<div class="popup">
+							<div class="so1">
+								Karl Urban
+							</div>
+						</div>
+-->
+					</div>
+					<div class="hughie">
+						<p>Hughie</p>
+					</div>
+					<div class="kimiko">
+						<p>Kimiko</p>
+					</div>
+					<div class="frenchie">
+						<p>Frenchie</p>
+					</div>
+					<div class="mothersmilk">
+						<p>Mother's Milk</p>
+					</div>
+				</div>
+				</div>
+				
+			<div id="theseven" class="section">
+				<img style="opacity: 0.8" src="images/7022211-the-boys-trailer-the-seven-15648407770922137848228.png" alt="">
+					<div class="theseven">
+					<div class="starlight">
+						<p>Starlight</p>
+					</div>
+					<div class="thedeep">
+						<p>The Deep</p>
+					</div>
+					<div class="queenmaeve">
+						<p>Queen Maeve</p>
+					</div>
+					<div class="homelander">
+						<p>Homelander</p>
+					</div>
+					<div class="blacknoir">
+						<p>Black Noir</p>
+					</div>
+					<div class="atrain">
+						<p>A-Train</p>
+					</div>
+					<div class="translucent">
+						<p>Translucent</p>
+					</div>
+				</div>
+			</div>	
+			<div class="section">
+				<div class="background"><img style="opacity: 0.8" src="images/background.jpg" alt=""></div>
+				<div class="stormfront"><img src="images/stormfront 2.png" alt=""></div>
+				<p class="name">STORMFRONT</p>
+				<div class="effect">
+					<p class="sub">The New Girl</p>
+					
+				<img src="images/giphy.gif" alt="">
+					</div>
+			</div>
+				
+			<div id="video" class="section">
+				
+			<img style="opacity: 0.8" src="images/5ba0d90203ece82f2a1d5489910630b8d79d7ec84fed3549760cea0fc5920cb7._RI_V_TTW_.jpg" alt="">
+				<div class="videobox">
+				<div class="box1">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/gSJ-7W-j4Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				<div class="box2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hXM4R-D7SpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			</div>
+			<div class="section" style="scroll-snap-align:end">
+				
+			<img style="margin: 0 auto; opacity: 0.8" src="images/the-boys-season-2-HD-character-portraits-.jpg" alt="">
+				<div class="videobox">
+				<div class="box1">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/cJukUFVNd38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				<div class="box2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/bkZEPgBqAu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			</div>
+			</div>
+			<div class="footer">
+  			<p>The Boys - Amazon TV Series</p>
+</div>
+		</div>
 		
- 	 overflow-x: hidden;
- 	 transition: 0.5s;
- 	 padding-top: 60px;
-	
+
+<!--		<iframe class="music" width="560" height="315" src="https://www.youtube.com/embed/ofjs1xTmwGU?rel=0&autoplay=1" frameborder="0" allow="accelerometer">-->
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginRight = "300px";
 }
 
-.sidebar a {
-	font-family: Molot;
-	src: url(Molot.otf);
-	font-size: 50px;
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	color: #f1f1f1;
-	display: block;
-	transition: 0.3s;
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
 }
-
-.sidebar a:hover {
-  color: #800002 ;
-	transform: scale(1.1)
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 50px;
-  margin: 0px 50px 50px 0px;
-padding: 0 0 100 0; 
-}
-
-.openbtn {
-  font-size: 30px;
-  cursor: url(../hoangkhang2401.github.io/images/redglass_link.ani), pointer;
-  background-color: #f1f1f1; 
-  color: #050505;
-  padding: 10px 15px;
-  border: none;
-	float: right;
-}
-
-.openbtn:hover {
-  background-color: #800002;
-}
-
-#main {
-  transition: margin-right .5s;
-  padding: 16px;
-}
-
-.content{
-	background: blue;
-	width: 100%;
-	height: 1080px;
- 	scroll-snap-type: y mandatory;
-	overflow: auto;
-	scroll-behavior: smooth;
-}
-
-.section{
-	background: white;
-	height: 100vh;
-  	width: 100%;
-	scroll-snap-align: start;
-	scroll-behavior: smooth;
-	position: relative;
-}
-
-.section img{
-	width: 100vw;
-}
-
-.top img{
-	height: 100vh;
-	width: auto;
-	float: right;
-	position: relative;
-}
-
-.ten{
-	font-family: Subspace;
-	src: url(font/Subspace.otf);
-	font-size: 60px;
-	color: white;
-}
-
-.ten .billybutcher{
-	position: absolute;
-	left: 8%;
-	bottom: 30%;
-	transition: all 1s; 
-}
-
-.ten .hughie{
-	position: absolute;
-	left: 32%;
-	bottom: 30%;
-	transition: all 1s; 
-}
-
-.ten .kimiko{
-	position: absolute;
-	left: 48%;
-	bottom: 45%;
-	transition: all 1s; 
-}
-
-.ten .frenchie{
-	position: absolute;
-	left: 60%;
-	bottom: 50%;
-	transition: all 1s; 
-}
-
-.ten .mothersmilk{
-	position: absolute;
-	left: 70%;
-	bottom: 30%;
-	transition: all 1s; 
-}
-
-/*
-.popup{
-	width: 600px;
-	height: 600px;
-	position: absolute;
-	left: 50%;
-	background: rgba(0,0,0,0.80)
-		
-}
-*/
-
-.ten .billybutcher:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-.ten .hughie:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-.ten .kimiko:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-.ten .frenchie:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-.ten .mothersmilk:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-.effect{
-	width: 300px;
-}
-
-.effect img{
-	position: absolute;
-	bottom: 5vh;
-	width: 50vw;
-}
-
-.background {
-	height: 100vh;
-	width: auto;
-	position: relative;
-}
-
-.stormfront{
-	transition: all 3s;
-}
-
-.stormfront img{
-	height: 100vh;
-	width: auto;
-	position: absolute;
-	right: 45%;
-	bottom: 0px;
-}
-
-.stormfront:hover{
-	color: aqua;
-	transform: scale(1.2);
-}
-
-.name{
-	font-family: Subspace;
-	src: url(font/Subspace.otf);
-	color: white;
-	font-size: 150px;
-	position: absolute;
-	bottom: 20%;
-	left: 5%;
-	transition: all 1s;
-	z-index: 98;
-}
-.sub{
-	font-family: Subspace;
-	src: url(font/Subspace.otf);
-	color: white;
-	font-size: 50px;
-	position: absolute;
-	top: 55%;
-	left: 15%;
-	transition: all 1s;
-}
-
-.name:hover{
-	color: #800002;
-	transform: scale(1.1)
-}
-
-
-
+</script>
+</body>
+</html>
