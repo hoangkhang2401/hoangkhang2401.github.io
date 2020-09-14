@@ -51,10 +51,12 @@ body{
 	top: 15%;
 	left: 10%;
 	transition: all 3s;
+	opacity: 0.2;
 }
 
 .logo img:hover{
-	transform: scale(1.2)
+	transform: scale(1.2);
+	opacity: 1;
 }
 
 .sidebar {
@@ -170,6 +172,23 @@ padding: 0 0 100 0;
 
 .storybox:hover {
 	opacity: 1
+}
+
+.headlinetheboys{
+	font-family: Molot;
+	src: url(Molot.otf);
+	font-size: 150px;
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	color: rgba(152,0,0,1.00);
+	transition: all 2s;
+}
+
+.headlinetheboys:hover{
+	transform: scale(2) translateY(150px);
+	color: white;
+	opacity: 0.5;
 }
 
 .ten{
@@ -340,6 +359,24 @@ padding: 0 0 100 0;
 	color: #800002;
 	transform: scale(1.1)
 }
+
+.headlinetheseven{
+	font-family: Molot;
+	src: url(Molot.otf);
+	font-size: 150px;
+	position: absolute;
+	bottom: 5%;
+	left: 30%;
+	color: white ;
+	transition: all 2s;
+}
+
+.headlinetheseven:hover{
+	transform: scale(2) translateY(-150px);
+	color: rgba(152,0,0,1.00);
+	opacity: 0.5;
+}
+
 
 .effect{
 	width: 300px;
